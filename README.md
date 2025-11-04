@@ -341,7 +341,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on:
 ## 👨‍💻 Author
 
 **Asheesh Ranjan Srivastava**
-- **Email:** asheeshsrivastava9@gmail.com
+- **Email:** asheesh.srivastava@questabdcrossfire.com
 - **LinkedIn:** [linkedin.com/in/asheesh-ranjan-srivastava](https://www.linkedin.com/in/asheesh-ranjan-srivastava/)
 - **GitHub:** [github.com/AsheeshSrivastava](https://github.com/AsheeshSrivastava)
 - **Portfolio:** [AsheeshSrivastava/portfolio](https://github.com/AsheeshSrivastava/portfolio)
@@ -368,7 +368,8 @@ Built with the **"Small fixes, big clarity"** philosophy from Quest & Crossfire,
 ### Get Help
 - **Documentation:** Check guides in the repository
 - **Issues:** [Open an issue](https://github.com/AsheeshSrivastava/question-forge/issues) on GitHub
-- **Email:** asheeshsrivastava9@gmail.com
+- **Email:** asheesh.srivastava@questabdcrossfire.com
+- **LinkedIn:** [linkedin.com/in/asheesh-ranjan-srivastava](https://www.linkedin.com/in/asheesh-ranjan-srivastava/)
 
 ### Share Feedback
 Using QuestionForge? We'd love to hear about it!

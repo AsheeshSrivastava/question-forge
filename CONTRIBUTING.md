@@ -354,7 +354,8 @@ Before submitting PR, verify:
 
 ## ❓ Questions & Support
 
-- **Email:** asheeshsrivastava9@gmail.com
+- **Email:** asheesh.srivastava@questabdcrossfire.com
+- **LinkedIn:** [linkedin.com/in/asheesh-ranjan-srivastava](https://www.linkedin.com/in/asheesh-ranjan-srivastava/)
 - **Issues:** GitHub issues with `question` label
 - **Documentation:** Check guides in repository:
   - `QUICK_START.md` - Getting started
