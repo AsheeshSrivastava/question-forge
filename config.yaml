@@ -1,0 +1,293 @@
+# QuestionForge Configuration
+# "Small fixes, big clarity" - Quest & Crossfire
+
+# Scoring weights (must sum to 1.0)
+# v2.0: Enhanced with academic + industry standards
+scoring:
+  weights:
+    adult_learning: 0.20      # Real-world context, practical application (CMU, ADDIE)
+    people_first: 0.15        # Inclusive language, diverse examples (UDL, Quest & Crossfire)
+    blooms: 0.15              # Taxonomy alignment (Anderson & Krathwohl)
+    practical: 0.15           # Industry relevance, tool awareness (AWS, IBM, ISO 17024)
+    rag: 0.10                 # Search optimization (Quest & Crossfire)
+    construct_validity: 0.15  # Measures what it claims (Wiggins & McTighe, NCCA)
+    cognitive_depth: 0.10     # Six Facets of Understanding (Wiggins & McTighe)
+
+  threshold: 4.8              # Minimum score for flagship quality
+  passing_score: 4.0          # Acceptable quality threshold
+
+  # Standards alignment
+  academic_standards:
+    - wiggins_mctighe_ubd     # Understanding by Design
+    - cmu_backward_design     # Carnegie Mellon principles
+    - bloom_revised_taxonomy  # Anderson & Krathwohl 2001
+    - acm_sigcse             # CS Education Research
+
+  industry_standards:
+    - aws_sme_item_writing   # AWS certification standards
+    - ncca_accreditation     # National Commission for Certifying Agencies
+    - iso_17024              # Certification of persons
+    - iso_29990              # Learning services quality
+
+# Refinement settings
+refinement:
+  auto_apply_threshold: 4.5   # Auto-apply if projected score ≥ this
+  preserve_original: true     # Keep original question in metadata
+  max_iterations: 3           # Max refinement passes per question
+
+  # Transformation priorities (1=highest, 5=lowest)
+  priorities:
+    single_word_expansion: 1
+    real_world_context: 2
+    bloom_alignment: 3
+    rag_enhancement: 4
+    example_diversity: 5
+
+# Templates and patterns
+templates:
+  # Real-world scenarios by domain
+  real_world_contexts:
+    data_analysis:
+      - "analyzing customer purchase data"
+      - "processing survey results"
+      - "calculating sales metrics"
+      - "cleaning messy datasets"
+
+    web_development:
+      - "building a user registration form"
+      - "validating email addresses"
+      - "handling API responses"
+      - "managing session data"
+
+    automation:
+      - "automating daily reports"
+      - "processing batch files"
+      - "scheduling tasks"
+      - "monitoring system logs"
+
+    general:
+      - "tracking student scores"
+      - "managing inventory items"
+      - "calculating shipping costs"
+      - "filtering search results"
+
+  # Diverse, globally inclusive names
+  diverse_names:
+    - Priya
+    - Chen
+    - Amara
+    - Kofi
+    - Sofia
+    - Ahmed
+    - Yuki
+    - Carlos
+    - Elena
+    - Arjun
+    - Fatima
+    - Diego
+    - Mei
+    - Rashid
+    - Isabella
+    - Kwame
+
+  # Realistic variable names
+  realistic_variables:
+    numbers: [price, quantity, score, count, total, age, years, revenue]
+    strings: [name, username, email, title, description, address, city]
+    lists: [scores, prices, names, items, results, data_points]
+    booleans: [is_active, has_discount, is_valid, is_complete]
+
+# Output settings
+output:
+  formats:
+    - jsonl
+    - json
+
+  include_metadata: true
+  show_diff: true
+  colorize: true
+
+  report:
+    html: true
+    pdf: false
+    charts: true
+
+# RAG optimization
+rag:
+  min_keywords: 5
+  max_keywords: 15
+  include_synonyms: true
+  expand_abbreviations: true
+
+  semantic:
+    min_question_length: 50  # characters
+    avoid_single_words: true
+    add_context_markers: true
+
+# Bloom's taxonomy mapping
+blooms:
+  starter:
+    - remember
+    - understand
+  core:
+    - understand
+    - apply
+  stretch:
+    - apply
+    - analyze
+    - evaluate
+    - create
+
+# Construct Validity: Style-Bloom's expected alignment
+construct_validity:
+  style_bloom_map:
+    single_word:
+      - remember
+    short_question:
+      - remember
+      - understand
+    predict_output:
+      - apply
+    debug_fix:
+      - apply
+      - analyze
+    scenario_task:
+      - apply
+      - create
+    explain_concept:
+      - understand
+    compare_contrast:
+      - analyze
+    fill_in_blank:
+      - remember
+      - apply
+    rewrite:
+      - evaluate
+      - create
+
+# Cognitive Depth: Six Facets of Understanding (Wiggins & McTighe)
+cognitive_depth:
+  six_facets:
+    explanation:
+      patterns:
+        - explain
+        - why does
+        - how does
+        - what causes
+        - describe how
+        - walk through
+      weight: 1.0
+
+    interpretation:
+      patterns:
+        - what does it mean
+        - interpret
+        - significance
+        - what is the purpose
+        - illustrate
+        - make sense of
+      weight: 1.0
+
+    application:
+      patterns:
+        - use
+        - apply
+        - solve
+        - implement
+        - build
+        - create
+        - write code
+      weight: 1.0
+
+    perspective:
+      patterns:
+        - compare
+        - contrast
+        - alternative
+        - tradeoff
+        - advantage
+        - disadvantage
+        - versus
+      weight: 1.0
+
+    empathy:
+      patterns:
+        - impact on
+        - user experience
+        - accessibility
+        - how would
+        - consider
+        - from perspective
+      weight: 0.8
+
+    self_knowledge:
+      patterns:
+        - debug
+        - reflect
+        - assess your understanding
+        - what dont you know
+        - identify the problem
+        - diagnose
+      weight: 0.8
+
+# Quality thresholds by criteria
+quality_thresholds:
+  adult_learning:
+    excellent: 4.5
+    good: 4.0
+    adequate: 3.5
+    poor: 3.0
+
+  people_first:
+    excellent: 4.5
+    good: 4.0
+    adequate: 3.5
+    poor: 3.0
+
+  blooms:
+    excellent: 5.0
+    good: 4.0
+    adequate: 3.5
+    poor: 3.0
+
+  practical:
+    excellent: 4.5
+    good: 4.0
+    adequate: 3.5
+    poor: 3.0
+
+  rag:
+    excellent: 4.5
+    good: 4.0
+    adequate: 3.5
+    poor: 3.0
+
+  construct_validity:
+    excellent: 4.5
+    good: 4.0
+    adequate: 3.5
+    poor: 3.0
+
+  cognitive_depth:
+    exceptional: 5.0  # 3+ facets
+    strong: 4.0       # 2 facets
+    moderate: 3.0     # 1 facet
+    surface: 2.0      # factual recall
+    poor: 1.0         # rote memorization
+
+# Brand compliance (Quest & Crossfire)
+brand:
+  philosophy: "Small fixes, big clarity"
+
+  principles:
+    - systematic
+    - reflective
+    - honest
+    - experimental
+    - encouraging
+
+  voice:
+    tone: professional_friendly
+    use_emoji: true
+    celebrate_progress: true
+    frame_positively: true

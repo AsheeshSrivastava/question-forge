@@ -1,0 +1,21 @@
+# QuestionForge v2.0 - Hugging Face Spaces Requirements
+
+# Web Interface
+gradio>=4.0.0
+
+# Core Dependencies
+pyyaml>=6.0
+click>=8.1.0
+
+# Data processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# NLP for semantic analysis
+nltk>=3.8.0
+
+# Rich is optional for HF (used in CLI only)
+# rich>=13.0.0
+
+# Export formats
+openpyxl>=3.1.0

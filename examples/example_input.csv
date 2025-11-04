@@ -1,0 +1,6 @@
+id,topic,question,style,difficulty,bloom_level,keywords,subtopics,prerequisites
+q_py_001,Python Basics,What is the correct way to declare a variable in Python?,short_question,starter,remember,"variable,declaration,syntax","variables,syntax",
+q_py_002,Python Basics,Explain the difference between list and tuple in Python.,explain_concept,core,understand,"list,tuple,data structures,immutable","data structures,collections",q_py_001
+q_py_003,Control Flow,Write a function that returns the largest number in a list.,scenario_task,stretch,apply,"function,list,max,algorithm","functions,algorithms",q_py_001
+q_py_004,Data Types,What will this code print: print(type(5.0))?,predict_output,starter,remember,"data types,float,type,builtin","data types,type checking",
+q_py_005,Functions,Debug this function: def add(a b): return a + b,debug_fix,core,analyze,"function,syntax error,parameters,debugging","functions,debugging",q_py_003

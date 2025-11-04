@@ -1,0 +1,62 @@
+{
+  "questions": [
+    {
+      "id": "q_py_001",
+      "topic": "Python Basics",
+      "question": "What is the correct way to declare a variable in Python?",
+      "style": "short_question",
+      "difficulty": "starter",
+      "bloom_level": "remember",
+      "keywords": ["variable", "declaration", "syntax"],
+      "subtopics": ["variables", "syntax"],
+      "prerequisites": []
+    },
+    {
+      "id": "q_py_002",
+      "topic": "Python Basics",
+      "question": "Explain the difference between list and tuple in Python.",
+      "style": "explain_concept",
+      "difficulty": "core",
+      "bloom_level": "understand",
+      "keywords": ["list", "tuple", "data structures", "immutable"],
+      "subtopics": ["data structures", "collections"],
+      "prerequisites": ["q_py_001"]
+    },
+    {
+      "id": "q_py_003",
+      "topic": "Control Flow",
+      "question": "Write a function that returns the largest number in a list.",
+      "style": "scenario_task",
+      "difficulty": "stretch",
+      "bloom_level": "apply",
+      "keywords": ["function", "list", "max", "algorithm"],
+      "subtopics": ["functions", "algorithms"],
+      "prerequisites": ["q_py_001"],
+      "code_context": "def find_largest(numbers):\n    # Your code here\n    pass"
+    },
+    {
+      "id": "q_py_004",
+      "topic": "Data Types",
+      "question": "What will this code print: print(type(5.0))?",
+      "style": "predict_output",
+      "difficulty": "starter",
+      "bloom_level": "remember",
+      "keywords": ["data types", "float", "type", "builtin"],
+      "subtopics": ["data types", "type checking"],
+      "prerequisites": [],
+      "code_context": "print(type(5.0))"
+    },
+    {
+      "id": "q_py_005",
+      "topic": "Functions",
+      "question": "Debug this function: def add(a b): return a + b",
+      "style": "debug_fix",
+      "difficulty": "core",
+      "bloom_level": "analyze",
+      "keywords": ["function", "syntax error", "parameters", "debugging"],
+      "subtopics": ["functions", "debugging"],
+      "prerequisites": ["q_py_003"],
+      "code_context": "def add(a b):\n    return a + b"
+    }
+  ]
+}
