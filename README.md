@@ -4,7 +4,7 @@
 
 Transform educational questions into high-quality assessments using research-backed standards from CMU, AWS, and ISO certifications.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: AGPL-3.0](https://img.shields.io/badge/License-AGPL%203.0-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
 [![Python 3.7+](https://img.shields.io/badge/python-3.7+-blue.svg)](https://www.python.org/downloads/)
 [![HuggingFace](https://img.shields.io/badge/🤗-HuggingFace%20Space-yellow)](https://huggingface.co/spaces/asheeshsrivastava9/Qnc-QuestionForger)
 
@@ -319,13 +319,22 @@ python main.py analyze examples/example_input.json
 
 ## 📄 License
 
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the **AGPL-3.0 License** - see the [LICENSE](LICENSE) file for details.
 
 ### What This Means
 - ✅ Free to use for commercial and non-commercial projects
 - ✅ Can modify and distribute
 - ✅ Must include original license and copyright notice
+- ✅ **Network use requires source disclosure** (AGPL requirement)
+- ✅ Derivative works must also be AGPL-3.0
 - ✅ No warranty provided
+
+### Contributing
+See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on:
+- Development setup
+- Code standards and testing
+- Research-backed contributions
+- Pull request process
 
 ---
 
